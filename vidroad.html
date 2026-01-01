@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>驾照展示页 (View Details)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="driver-licence-container">
+        <header class="header">
+            <h1 class="header-title">View Details</h1>
+            <p class="last-refreshed">last refreshed: Thu 1 Jan 2026 12:00 pm</p>
+        </header>
+
+        <div class="licence-photo-area">
+            <div class="photo-wrapper">
+                <img src="photo.png" alt="驾照图片" class="licence-main-photo">
+            </div>
+        </div>
+
+        <nav class="tab-bar">
+            <button class="tab-button active" data-tab="licence">Licence</button>
+            <button class="tab-button" data-tab="identity">Identity</button>
+            <button class="tab-button" data-tab="age">Age</button>
+        </nav>
+
+        <main class="content-area">
+
+            <div id="licence" class="tab-content active">
+                <h2 class="section-title">HENTEL JIAO</h2>
+                <hr class="divider">
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="label">Licence number</span>
+                        <span class="value">082437670</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Expiry</span>
+                        <span class="value">03 JUN 2035</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Licence type</span>
+                        <span class="value">Car</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Date of birth</span>
+                        <span class="value">04 Jan 2005</span>
+                    </div>
+                </div>
+
+                <hr class="divider">
+                <h2 class="section-title">Address</h2>
+                <p class="address-value">Unit 2 13 BLACKBURN ST<br>SURREY HILLS VIC 3127</p>
+
+                <hr class="divider">
+                <h2 class="section-title">Signature</h2>
+                <div class="signature-area">
+                    <img src="sign.png" alt="Signature" class="signature-img">
+                    </div>
+
+                <div class="separator-bar">
+                    <span class="separator-text">Car licence details</span>
+                </div>
+
+                <div class="details-list">
+                    <div class="detail-item-single">
+                        <span class="label">Licence status</span>
+                        <span class="value"><i class="fa-solid fa-circle-check age-icon" style="font-size: 14px; margin-right: 5px;"></i>Current</span>
+                    </div>
+                    <div class="detail-item-single">
+                        <span class="label">Proficiency</span>
+                        <span class="value">P2</span>
+                    </div>
+                    <div class="detail-item-single">
+                        <span class="label">Issue date</span>
+                        <span class="value">03 Jun 2025</span>
+                    </div>
+                    <div class="detail-item-single">
+                        <span class="label">P2 end date</span>
+                        <span class="value">03 Jun 2027</span>
+                    </div>
+                    <div class="detail-item-single">
+                        <span class="label">Expiry</span>
+                        <span class="value">03 Jun 2035</span>
+                    </div>
+                </div>
+
+                <div class="separator-bar">
+                    <span class="separator-text">Other details</span>
+                </div>
+
+                <h2 class="section-title">Conditions</h2>
+                <div class="conditions-list">
+                    <p><strong>A</strong> &nbsp;&nbsp;&nbsp; Automatic transmission – (car)</p>
+                    <p><strong>S</strong> &nbsp;&nbsp;&nbsp; Glasses or corrective lenses must be worn while driving</p>
+                </div>
+            </div>
+
+            <div id="identity" class="tab-content">
+                <h1 class="page-header-title">HENTEL JIAO</h1>
+                <hr class="divider">
+
+                <h2 class="section-title">Address</h2>
+                <p class="address-value-bold">Unit 2 13 BLACKBURN ST<br>SURREY HILLS VIC 3127</p>
+                <hr class="divider">
+
+                <h2 class="section-title">Signature</h2>
+                <div class="signature-area">
+                    <img src="sign.png" alt="Signature" class="signature-img">
+                </div>
+            </div>
+
+            <div id="age" class="tab-content">
+                <h2 class="section-title">Age status</h2>
+                <div class="age-status-box">
+                    <i class="fa-solid fa-circle-check age-icon"></i> <span class="age-text">Over 18</span>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer-title">Acknowledgement of Country</p>
+            <p class="footer-text">
+                VicRoads proudly acknowledge the First Peoples of Victoria. We acknowledge their ongoing strength in practising the world’s oldest living culture. We acknowledge the Traditional Owners’ lands, waters, and skies on which we live and pay respects to their Elders past and present.
+            </p>
+            <p class="footer-copyright">
+                © VicRoads 2025 (R&L Services Victoria Pty Ltd)
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
